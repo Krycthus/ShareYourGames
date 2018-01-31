@@ -11,14 +11,16 @@
 |
 */
 
-
-Route::get('/salut/{name}','Controller@index');
-
-/*
-
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('a-propos', 'PagesController@about');
+
+/*
+Route::get('welcome', 'UserController@index');
+
+Route::get('/salut/{name}','Controller@index');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'ip'], function() {
     
@@ -28,4 +30,3 @@ Route::group(['prefix' => 'admin', 'middleware' => 'ip'], function() {
 
 });
 */
-?>

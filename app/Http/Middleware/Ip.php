@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Request;
 
 class Ip
 {
@@ -15,6 +16,9 @@ class Ip
      */
     public function handle($request, Closure $next)
     {
+        if(Request::ip() == '::1')
+        {
             return $next($request);
+        }
     }
 }

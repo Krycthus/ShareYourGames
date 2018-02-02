@@ -41143,7 +41143,7 @@ var Main = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'h3',
                     null,
-                    'All Products'
+                    'All Games'
                 )
             );
         }

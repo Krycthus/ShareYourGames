@@ -17,7 +17,15 @@ Route::get('/', function () {
 
 Route::get('a-propos', 'PagesController@about');
 
+Route::get('/home/{name}', function($name){
+
+    return "Salut $name";
+});
+
 /*
+Route::get('welcome', 'UserController@index');
+
+Route::get('/salut/{name}','Controller@index');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'ip'], function() {
     

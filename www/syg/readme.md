@@ -11,9 +11,9 @@ Bienvenue sur la page principal de Share Your Games !
 
 ## Contributing
 
-[Robert Thibault]
-[Barabé Pierre]
-[Boisdron Jérémy]
+* Robert Thibault
+* Barabé Pierre
+* Boisdron Jérémy
 
 ## Version
 

@@ -19,7 +19,7 @@ Route::Auth();
 
 /*
 Route::group(['prefix' => 'admin', 'middleware' => 'ip'], function() {
-    
+
     Route::get('accueil/{name}', function ($name) {
         return "Salut $name";
     });

@@ -24,17 +24,23 @@ services:
   mysql:
     image: mysql
     ports:
-      - "33061:3306"
       - "3306:3306"
     volumes:
+      - ./my.cnf:/etc/mysql/my.conf
       - ./mysql:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: topsecret
+      MYSQL_DATABASE: syg
 
   code:
     image: busybox
     volumes:
       - ./www:/var/www
+
+
+#volumes:
+#  my-datavolume:
+
 
 # COPY conf/my.cnf /etc/mysql/my.cnf
 # - ./conf/php.ini:/etc/php/7.1/fpm/conf.d/40-custom.ini
